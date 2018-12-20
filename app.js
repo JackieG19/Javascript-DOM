@@ -1,24 +1,14 @@
-const banner = document.querySelector('#page-banner');
-// grabbing the page-banner element
+const bookList = document.querySelector('#book-list');
 
-console.log('#page-banner node type is:', banner.nodeType);
-// printing the node type: the constabt banner which will give you a number 
-// node type will read this as a 1 which means its an element
+console.log('book list parent node:', bookList.parentNode);
+// this will grab a reference to the parent node of then book-list element
 
-console.log('#page-banner node name is:', banner.nodeName);
-// output the node name that will return the element name which will be a DIV
+console.log('book list parent element:', bookList.parentElement);
+// this will do exactly the same thing as the console log above
 
-console.log('#page-banner has child nodes:', banner.hasChildNodes());
-// output true or false if the banner element has a child node
+console.log('book list parent element:', bookList.parentElement.parentElement);
+// this will first find the parent element of the book list there then find the 
+// parent element of that book list which will grab the reference to that parent
 
-const clonedBanner = banner.cloneNode(true);
-// can clone an entire node and can insert it somewhere else(true because it will give the nested content)
-// if I don;t put true it would create a div with an ID of page banner and it will disregard every child node inside 
-
-// const clonedBanner = banner.cloneNode(false);
-// if I pass in (false) will only give me the div with ID of banner and not have the nested node in it
-
-console.log(clonedBanner);
-
-
-
+console.log('all node children:');
+// grabbing all the child element of the book list element
