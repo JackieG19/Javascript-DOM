@@ -12,3 +12,12 @@ Array.from(books).forEach(function(book){
     book.textContent = 'test';
     // this will rewrite the textContent of the span element with the class of name
 });
+
+const bookList = document.querySelector('#book-list');
+//console.log(bookList.innerHTML);
+
+//bookList.innerHTML = '<h2>Books and more books...</h2>';
+// this will replace all that innner HTML with the h2 element
+
+bookList.innerHTML += '<p>This is how you add HTML element.</>';
+// this will append(add on to) the html by creating a <p> tag
