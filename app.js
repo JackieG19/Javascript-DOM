@@ -7,6 +7,8 @@ Array.from(books).forEach(function(book){
 // passing in a function which is going to fire on each book
 // (its gonna take the individual book and iterate each one)
     
-    console.log(book.textContent);
-    // textContent - this property is going to grab the text within the book element 
+    // console.log(book.textContent); - textContent - this property is going to grab the text within the book element 
+    
+    book.textContent = 'test';
+    // this will rewrite the textContent of the span element with the class of name
 });
