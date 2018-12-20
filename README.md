@@ -1,2 +1,6 @@
-# JavaScript-DOM-Tutorial
-All course files for the JavaScrip DOM Tutorials on The Net Ninja YouTube channel.
+# JavaScript DOM 
+ 
+ - Get Element By ID, Class, or Tag
+ - Using the Query Selector
+ - Changing Text & HTML Content
+ - Traversing(Moving) through the HTML 
