@@ -1,25 +1,24 @@
-var books = document.querySelectorAll('#book-list li .name');
-// this will grab al of the span tag with class of name and store in the variable books 
+const banner = document.querySelector('#page-banner');
+// grabbing the page-banner element
 
-Array.from(books).forEach(function(book){
-// turning the book collection into an array
-// using the forEach method to cycle through them 
-// passing in a function which is going to fire on each book
-// (its gonna take the individual book and iterate each one)
-    
-    book.textContent += '(book title)';
-    // append(add) more text with the span element text
-});
+console.log('#page-banner node type is:', banner.nodeType);
+// printing the node type: the constabt banner which will give you a number 
+// node type will read this as a 1 which means its an element
 
+console.log('#page-banner node name is:', banner.nodeName);
+// output the node name that will return the element name which will be a DIV
 
-const bookList = document.querySelector('#book-list');
-//console.log(bookList.innerHTML);
+console.log('#page-banner has child nodes:', banner.hasChildNodes());
+// output true or false if the banner element has a child node
 
-//bookList.innerHTML = '<h2>Books and more books...</h2>';
-// this will replace all that innner HTML with the h2 element
+const clonedBanner = banner.cloneNode(true);
+// can clone an entire node and can insert it somewhere else(true because it will give the nested content)
+// if I don;t put true it would create a div with an ID of page banner and it will disregard every child node inside 
 
-bookList.innerHTML += '<p>This is how you add HTML element.</>';
-// this will append(add on to) the html by creating a <p> tag
+// const clonedBanner = banner.cloneNode(false);
+// if I pass in (false) will only give me the div with ID of banner and not have the nested node in it
+
+console.log(clonedBanner);
 
 
 
